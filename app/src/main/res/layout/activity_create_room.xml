@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_live_prepare"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlebar"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/set_cover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/cover"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@mipmap/default_cover"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_pic_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/ic_tip_image"
+                android:gravity="center"
+                android:text="设置直播封面"
+                android:textColor="#ccc"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="标题"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请输入直播的标题"
+                android:lines="1"
+                android:maxLength="32"
+                android:padding="10dp"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="房间号"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/room_no"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:maxLength="32"
+                android:padding="10dp"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/create"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_bkg_red_rect_round"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="开始直播"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+</RelativeLayout>
+

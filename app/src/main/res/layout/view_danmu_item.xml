@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+
+    <ImageView
+        android:id="@+id/user_avatar"
+        android:layout_width="@dimen/round_small_dius"
+        android:layout_height="@dimen/round_small_dius"
+        android:src="@mipmap/default_avatar"/>
+    <TextView
+        android:id="@+id/chat_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/user_avatar"
+        android:layout_marginLeft="@dimen/round_small_dius"
+        android:background="@drawable/round_bkg_small"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:maxWidth="200dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="聊天内容"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/chat_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/user_avatar"
+        android:text="发送者名字"
+        android:textColor="#fff"
+        android:textSize="12sp" />
+</RelativeLayout>

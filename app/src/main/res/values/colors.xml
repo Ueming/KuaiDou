@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#232323</color>
+    <color name="colorPrimaryDark">#232323</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="purple">#DD11DD</color>
+    <!--主透明背景-->
+    <color name="mainTranslucent">#00000000</color>
+    <color name="mainWhiteTranslucent">#3386BECA</color>
+</resources>

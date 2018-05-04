@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/host_op_bkg"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/beauty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/icon_beauty_off"
+        android:drawablePadding="10dp"
+        android:padding="5dp"
+        android:text="开美颜"
+        android:textColor="#515151"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/flash_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/icon_flashlight_off"
+        android:drawablePadding="10dp"
+        android:padding="5dp"
+        android:text="开闪光"
+        android:textColor="#515151"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/voice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/icon_mic_on"
+        android:drawablePadding="10dp"
+        android:padding="5dp"
+        android:text="关声音"
+        android:textColor="#515151"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/icon_camera_switch"
+        android:drawablePadding="10dp"
+        android:padding="5dp"
+        android:text="翻转"
+        android:textColor="#515151"
+        android:textSize="20sp"
+        android:layout_marginBottom="15dp"/>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="round_big_radius">20dp</dimen>
+    <dimen name="round_big_radius_m1">19dp</dimen>
+    <dimen name="round_big_dius">40dp</dimen>
+    <dimen name="round_big_dius_m2">38dp</dimen>
+    <dimen name="round_small_radius">15dp</dimen>
+    <dimen name="round_small_dius">30dp</dimen>
+</resources>

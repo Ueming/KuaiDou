@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/round_big_dius"
+    android:layout_margin="5dp"
+    android:orientation="horizontal">
+    <!--主播头像区-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_bkg_big"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/round_big_radius">
+
+        <ImageView
+            android:id="@+id/host_avatar"
+            android:layout_width="@dimen/round_big_dius_m2"
+            android:layout_height="@dimen/round_big_dius_m2"
+            android:layout_marginLeft="1dp" />
+
+        <TextView
+            android:id="@+id/watchers_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="观看人数"
+            android:textColor="#ccc"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <!--用户头像区-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/watch_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp" />
+</merge>

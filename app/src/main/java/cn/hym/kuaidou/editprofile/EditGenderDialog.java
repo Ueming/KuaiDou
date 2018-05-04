@@ -16,6 +16,7 @@ public class EditGenderDialog extends TransParentDialog {
 
     public EditGenderDialog(Activity activity) {
         super(activity);
+        //sd
         View mainView = LayoutInflater.from(activity).inflate(R.layout.dialog_edit_gender, null, false);
 
         maleView = (RadioButton) mainView.findViewById(R.id.male);
